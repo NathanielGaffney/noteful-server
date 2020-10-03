@@ -1,5 +1,6 @@
 const foldersService = {
     getFolders(knex) {
+        console.log(3)
         return knex.select('*').from('folders')
     },
     getFolderById(knex, id){
